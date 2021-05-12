@@ -7,5 +7,6 @@ import kodlamaio.HRMS.entities.concretes.User;
 public interface UserService {
 
 	List<User> getall();
+
 	void add(User user);
 }
