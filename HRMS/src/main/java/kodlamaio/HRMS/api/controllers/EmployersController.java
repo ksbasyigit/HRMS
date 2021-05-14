@@ -21,7 +21,7 @@ public class EmployersController {
 		super();
 		this.employerService = employerService;
 	}
-	GetMapping("/getall")
+	@GetMapping("/getall")
 	public List<Employer> getall(){
 		return employerService.getall(); 
 	}

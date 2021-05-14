@@ -8,5 +8,5 @@ public interface UserService {
 
 	List<User> getall();
 
-	void add(User user);
+	User add(User user);
 }
