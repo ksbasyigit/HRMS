@@ -22,12 +22,30 @@ public class UserManager implements UserService{
 	@Override
 	public List<User> getall() {
 		
-		return this.userDao.findAll();
+		return userDao.findAll();
 	}
 
 	@Override
 	public User add(User user) {
 		return userDao.save(user);
+	}
+
+
+	@Override
+	public User delete(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User update(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User get(int id) {
+		return userDao.getOne(id);
 	}
 
 }

@@ -24,7 +24,7 @@ public class UsersController {
 		super();
 		this.userService = userService;
 	}
-
+	
 	@GetMapping("/getall")
 	public List<User> getall() {
 		return userService.getall();
@@ -32,6 +32,11 @@ public class UsersController {
 	
 	@PostMapping("/add")
 	public User add(@RequestBody User user) {
-		return this.userService.add(user);
+		return userService.add(user);
+	}
+
+	@PostMapping("/get")
+	public User get(int id) {
+		return userService.get(id);
 	}
 }
