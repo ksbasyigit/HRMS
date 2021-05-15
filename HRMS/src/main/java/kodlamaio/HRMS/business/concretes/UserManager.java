@@ -32,9 +32,8 @@ public class UserManager implements UserService{
 
 
 	@Override
-	public User delete(User user) {
-		// TODO Auto-generated method stub
-		return null;
+	public void delete(int id) {
+		userDao.deleteById(id);
 	}
 
 	@Override

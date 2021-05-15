@@ -49,4 +49,9 @@ public class UsersController {
 	//       FAIL_ON_EMPTY_BEANS) (through reference chain: kodlamaio.HRMS.entities.concretes.
 	//       User$HibernateProxy$X62IzM7u[\"hibernateLazyInitializer\"])",
 	// Hata çözümlenemedi.
+	
+	@GetMapping("/delete/{id}")
+	public void delete(@PathVariable int id) {
+		userService.delete(id);
+	}
 }
