@@ -24,4 +24,27 @@ public class EmployerManager implements EmployerService{
 		return this.employerDao.findAll();
 	}
 
+	@Override
+	public Employer get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employer add(Employer employer) {
+		return employerDao.save(employer);
+	}
+
+	@Override
+	public void delete(int id) {
+		employerDao.deleteById(id);
+		
+	}
+
+	@Override
+	public Employer update(Employer employer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
