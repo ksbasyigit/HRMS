@@ -2,7 +2,7 @@ package kodlamaio.HRMS.business.abstracts;
 
 import java.util.List;
 
-import kodlamaio.HRMS.entities.concretes.User;
+import kodlamaio.HRMS.core.entities.User;
 
 public interface UserService {
 

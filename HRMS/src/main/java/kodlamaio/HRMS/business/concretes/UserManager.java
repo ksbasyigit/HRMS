@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kodlamaio.HRMS.business.abstracts.UserService;
+import kodlamaio.HRMS.core.entities.User;
 import kodlamaio.HRMS.dataAccess.abstracts.UserDao;
-import kodlamaio.HRMS.entities.concretes.User;
 
 @Service
 public class UserManager implements UserService{
